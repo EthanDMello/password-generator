@@ -10,8 +10,17 @@ function writePassword() {
 }
 
 function generatePassword() {
+  var length = prompt("Choose length: ");
+  var special;
+  var numeric;
+  var uppercase;
+  var lowercase;
+
+  // create array which holds all the characters for the generated password
+  // push characters based on above variables selections.
+  generatePAssword = [];
   return "two two";
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());
+generateBtn.addEventListener("click");
