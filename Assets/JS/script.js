@@ -93,7 +93,7 @@ function generatePassword() {
   // generate input, check for valid inputs
   var length = prompt("Choose length: ");
   while (length < 8 || length > 128) {
-    length = prompt("you must choose a length between 8 and 128: ");
+    length = prompt("You must choose a length between 8 and 128: ");
   }
   console.log(length);
   var special = confirm("Include special characters?");
