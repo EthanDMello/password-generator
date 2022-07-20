@@ -102,11 +102,33 @@ function generatePassword() {
   var lowercase = confirm("Include lowercase characters?");
   console.log(special, numeric, uppercase, lowercase);
 
+  // choose what to include in generated password
+  var chosenCharacters = [];
+  if (special == true) {
+    chosenCharacters.push(...specialAr);
+  }
+  if (numeric == true) {
+    chosenCharacters.push(...numericAr);
+  }
+  if (uppercase == true) {
+    chosenCharacters.push(...uppercaseAr);
+  }
+  if (lowercase == true) {
+    chosenCharacters.push(...lowercaseAr);
+  }
+  console.log(chosenCharacters);
   // create array which holds all the characters for the generated password
   // push characters based on above variables selections.
-  var newPassword = [special, numeric, "stringg"];
-
-  return newPassword;
+  var newPassword = [];
+  for (let i = 0; i < length; i++) {
+    newPassword.push(
+      chosenCharacters[Math.floor(Math.random() * chosenCharacters.length)]
+    );
+  }
+  // convert array to string with no spaces
+  newPasswordStr = newPassword.join("");
+  console.log(newPasswordStr);
+  return newPasswordStr;
 }
 
 // Add event listener to generate button
