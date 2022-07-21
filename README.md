@@ -1,6 +1,6 @@
 # Homework Week 2
 
-Complete homework portfolio project with HTML and CSS files to fit the assessment criteria.
+A webpage that generates passwords for you with options to change length and choose what types of characters to choose. The webpage is made out of a HTML, CSS and Javascript files. This was created to fit the assessment criteria.
 
 Made by Ethan D'Mello:
 https://github.com/EthanDMello
